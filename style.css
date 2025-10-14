@@ -1,0 +1,135 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f9c5d5;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 1.8rem;
+}
+
+.container {
+    font-size: 1.6rem;
+    background-color: #fff;
+    width: 90%; 
+    max-width: 600px;
+    margin: 10rem auto 0;
+    border-radius: 1rem;
+    padding: 3rem; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    gap: 3.6rem;
+
+}
+
+.quiz {
+    display: flex; 
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+#answer-buttons {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.2rem; 
+    text-align: center;
+}
+
+.btn {
+    padding: 8px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: 0.2s;   
+    font-weight: 500;  
+}
+
+.btn.selected {
+    background-color: #c3a77b;
+}
+
+.sa {
+    background-color: #46923c;
+    color: #fff;
+}
+
+.sa:hover {
+    background-color: #277621;
+}
+
+.a {
+    background-color: #72bf6a; 
+    color: #fff;
+}
+
+.a:hover {
+    background-color: #4c9847;
+}
+
+.ndk {
+    background-color: #ced0d3;
+}
+
+.ndk:hover {
+    background-color: #a1a2a5;
+}
+
+.d {
+    background-color: #ff705f ;
+    color: #fff;
+}
+
+.d:hover {
+    background-color: #d64d40;
+}
+
+.sd {
+    background-color: #d0312d;
+    color: #fff;
+}
+
+.sd:hover {
+    background-color: #ba161e;
+}
+
+#next-btn {
+    background-color: #001e4d;
+    color: #fff;
+    font-weight: 500; 
+    width: 15rem;
+    padding: 1rem; 
+    margin: 2rem auto 0; 
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    display: none;
+}
+
+#next-btn:hover {
+    background-color: #364378;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #f9c5d5;
+  color: #000;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
