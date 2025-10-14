@@ -43,138 +43,138 @@ const questions = [
         ], 
         axis: "Y"
     }, 
-    {
-        question: "Fan campaigns, streaming, and voting truly help idols succeed.", 
-        answers: [
-            { text: "Strongly Agree", score: 2 },
-            { text: "Agree", score: 1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: -1 },
-            { text: "Strongly Disagree", score: -2 }
-        ], 
-        axis: "X"
-    }, 
-    {
-        question: "I buy albums, official merchandise, or support idols financially.",
-        answers: [
-            { text: "Strongly Agree", score: 2 },
-            { text: "Agree", score: 1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: -1 },
-            { text: "Strongly Disagree", score: -2 }
-        ], 
-        axis: "Y"
-    }, 
-    {
-        question: "I wouldn’t listen to a group/idol if they had gone through a controversy which ruined their public image.", 
-        answers: [
-            { text: "Strongly Agree", score: -2 },
-            { text: "Agree", score: -1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: 1 },
-            { text: "Strongly Disagree", score: 2 }
-        ], 
-        axis: "X"
-    }, 
-    {
-        question: "It’s impossible to fully enjoy K-pop while ignoring behind-the-scenes controversies.",
-        answers: [
-            { text: "Strongly Agree", score: -2 },
-            { text: "Agree", score: -1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: 1 },
-            { text: "Strongly Disagree", score: 2 }
-        ], 
-        axis: "X"
-    }, 
-    {
-        question: "I keep up with news, social media, or interviews about my favorite idols.", 
-        answers: [
-            { text: "Strongly Agree", score: 2 },
-            { text: "Agree", score: 1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: -1 },
-            { text: "Strongly Disagree", score: -2 }
-        ], 
-        axis: "Y"
-    }, 
-    {
-        question: "I can easily go for weeks without actively seeking out new K-pop content, and I don't feel like I'm missing out.", 
-        answers: [
-            { text: "Strongly Agree", score: -2 },
-            { text: "Agree", score: -1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: 1 },
-            { text: "Strongly Disagree", score: 2 }
-        ], 
-        axis: "Y"
-    }, 
-    {
-        question: "I rarely use social media (exclude platforms like Discord and WhatsApp) to call out the K-pop industry's exploitative practices (e.g., slave contracts, overwork, mental health neglect).", 
-        answers: [
-            { text: "Strongly Agree", score: 2 },
-            { text: "Agree", score: 1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: -1 },
-            { text: "Strongly Disagree", score: -2 }
-        ], 
-        axis: "X"
-    }, 
-    {
-        question: "I mostly listen to K-pop casually and do not follow fan activities.", 
-        answers: [
-            { text: "Strongly Agree", score: -2 },
-            { text: "Agree", score: -1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: 1 },
-            { text: "Strongly Disagree", score: 2 }
-        ], 
-        axis: "Y"
-    }, 
-    {
-        question: "My general mood can be significantly affected by news or updates about my favorite K-pop groups (e.g., a comeback, a scandal, a win on a music show).", 
-        answers: [
-            { text: "Strongly Agree", score: 2 },
-            { text: "Agree", score: 1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: -1 },
-            { text: "Strongly Disagree", score: -2 }
-        ], 
-        axis: "Y"
-    }, 
-    {
-        question: "Idols’ hardships (trainee life, contracts, schedules) are exaggerated by media and fans.", 
-        answers: [
-            { text: "Strongly Agree", score: 2 },
-            { text: "Agree", score: 1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: -1 },
-            { text: "Strongly Disagree", score: -2 }
-        ], 
-        axis: "X"
-    }, 
-    {
-        question: "I rarely participate in fandom activities beyond enjoying the music/videos.", 
-        answers: [
-            { text: "Strongly Agree", score: -2 },
-            { text: "Agree", score: -1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: 1 },
-            { text: "Strongly Disagree", score: 2 }
-        ], 
-        axis: "Y"
-    }, 
-    {
-        question: "The K-pop industry is exploitative and prioritizes profit over artists’ well-being.", 
-        answers: [
-            { text: "Strongly Agree", score: -2 },
-            { text: "Agree", score: -1 },
-            { text: "Neutral / Don't Know", score: 0 },
-            { text: "Disagree", score: 1 },
-            { text: "Strongly Disagree", score: 2 }
-        ], 
-        axis: "X"
-    }
+    // {
+    //     question: "Fan campaigns, streaming, and voting truly help idols succeed.", 
+    //     answers: [
+    //         { text: "Strongly Agree", score: 2 },
+    //         { text: "Agree", score: 1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: -1 },
+    //         { text: "Strongly Disagree", score: -2 }
+    //     ], 
+    //     axis: "X"
+    // }, 
+    // {
+    //     question: "I buy albums, official merchandise, or support idols financially.",
+    //     answers: [
+    //         { text: "Strongly Agree", score: 2 },
+    //         { text: "Agree", score: 1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: -1 },
+    //         { text: "Strongly Disagree", score: -2 }
+    //     ], 
+    //     axis: "Y"
+    // }, 
+    // {
+    //     question: "I wouldn’t listen to a group/idol if they had gone through a controversy which ruined their public image.", 
+    //     answers: [
+    //         { text: "Strongly Agree", score: -2 },
+    //         { text: "Agree", score: -1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: 1 },
+    //         { text: "Strongly Disagree", score: 2 }
+    //     ], 
+    //     axis: "X"
+    // }, 
+    // {
+    //     question: "It’s impossible to fully enjoy K-pop while ignoring behind-the-scenes controversies.",
+    //     answers: [
+    //         { text: "Strongly Agree", score: -2 },
+    //         { text: "Agree", score: -1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: 1 },
+    //         { text: "Strongly Disagree", score: 2 }
+    //     ], 
+    //     axis: "X"
+    // }, 
+    // {
+    //     question: "I keep up with news, social media, or interviews about my favorite idols.", 
+    //     answers: [
+    //         { text: "Strongly Agree", score: 2 },
+    //         { text: "Agree", score: 1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: -1 },
+    //         { text: "Strongly Disagree", score: -2 }
+    //     ], 
+    //     axis: "Y"
+    // }, 
+    // {
+    //     question: "I can easily go for weeks without actively seeking out new K-pop content, and I don't feel like I'm missing out.", 
+    //     answers: [
+    //         { text: "Strongly Agree", score: -2 },
+    //         { text: "Agree", score: -1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: 1 },
+    //         { text: "Strongly Disagree", score: 2 }
+    //     ], 
+    //     axis: "Y"
+    // }, 
+    // {
+    //     question: "I rarely use social media (exclude platforms like Discord and WhatsApp) to call out the K-pop industry's exploitative practices (e.g., slave contracts, overwork, mental health neglect).", 
+    //     answers: [
+    //         { text: "Strongly Agree", score: 2 },
+    //         { text: "Agree", score: 1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: -1 },
+    //         { text: "Strongly Disagree", score: -2 }
+    //     ], 
+    //     axis: "X"
+    // }, 
+    // {
+    //     question: "I mostly listen to K-pop casually and do not follow fan activities.", 
+    //     answers: [
+    //         { text: "Strongly Agree", score: -2 },
+    //         { text: "Agree", score: -1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: 1 },
+    //         { text: "Strongly Disagree", score: 2 }
+    //     ], 
+    //     axis: "Y"
+    // }, 
+    // {
+    //     question: "My general mood can be significantly affected by news or updates about my favorite K-pop groups (e.g., a comeback, a scandal, a win on a music show).", 
+    //     answers: [
+    //         { text: "Strongly Agree", score: 2 },
+    //         { text: "Agree", score: 1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: -1 },
+    //         { text: "Strongly Disagree", score: -2 }
+    //     ], 
+    //     axis: "Y"
+    // }, 
+    // {
+    //     question: "Idols’ hardships (trainee life, contracts, schedules) are exaggerated by media and fans.", 
+    //     answers: [
+    //         { text: "Strongly Agree", score: 2 },
+    //         { text: "Agree", score: 1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: -1 },
+    //         { text: "Strongly Disagree", score: -2 }
+    //     ], 
+    //     axis: "X"
+    // }, 
+    // {
+    //     question: "I rarely participate in fandom activities beyond enjoying the music/videos.", 
+    //     answers: [
+    //         { text: "Strongly Agree", score: -2 },
+    //         { text: "Agree", score: -1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: 1 },
+    //         { text: "Strongly Disagree", score: 2 }
+    //     ], 
+    //     axis: "Y"
+    // }, 
+    // {
+    //     question: "The K-pop industry is exploitative and prioritizes profit over artists’ well-being.", 
+    //     answers: [
+    //         { text: "Strongly Agree", score: -2 },
+    //         { text: "Agree", score: -1 },
+    //         { text: "Neutral / Don't Know", score: 0 },
+    //         { text: "Disagree", score: 1 },
+    //         { text: "Strongly Disagree", score: 2 }
+    //     ], 
+    //     axis: "X"
+    // }
 ];
 
 const questionElement = document.getElementById("question");
@@ -264,12 +264,52 @@ nextButtonElement.addEventListener("click", () => {
 
 function showResults() {
     resetState();
-    questionElement.innerHTML = `Quiz Complete. Your scores:\nX: ${scoreX}\nY: ${scoreY}\nCoordinate: (${scoreX/8}, ${scoreY/8})`;
     nextButtonElement.style.display = "none";
+    const canvas = document.getElementById('kpopCompass');
+    canvas.style.display = 'block';
 
     console.log("Final X score:", scoreX);
     console.log("Final Y score:", scoreY);
+
+    const finalX = scoreX / 8;
+    const finalY = scoreY / 8;
+
+    new Chart(canvas, {
+        type: 'scatter', 
+        data: {
+            datasets: [{
+                label: 'Your Position', 
+                data: [{ x: finalX, y: finalY }],
+                backgroundColor: 'red',
+                pointRadius: 8
+            }]
+        }, 
+        options: {
+            scales: {
+                x: {
+                    min: -2, 
+                    max: 2, 
+                    title: { 
+                        display: true, 
+                        text: 'Realism ⟶ Idealism', 
+                    }
+                }, 
+                y: {
+                    min: -2, 
+                    max: 2, 
+                    title: { 
+                        display: true, 
+                        text: 'Casualism ⟶ Obsessivism', 
+                    }
+                }
+            }, 
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    })
 }
 
 startQuiz();
+
 
