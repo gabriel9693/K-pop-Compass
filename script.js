@@ -269,8 +269,6 @@ function showResults() {
     const ctx = canvas.getContext("2d");
     canvas.style.display = "block";
 
-    console.log("Final Scores:", scoreX, scoreY);
-
     const w = canvas.width;
     const h = canvas.height;
     const cx = w / 2;
@@ -340,21 +338,21 @@ function showResults() {
     if( scoreY / 8 > 0 && scoreX / 8 > 0 ) {
         resultDesc.innerHTML = "You are an <strong>Obsessed Idealist</strong> <br> An <strong>obsessed</strong> K-pop fan is a fan who is actively engaging with K-pop activities as well as their favorite idols’ life activities. These people might even support their idols financially. <br> <br> An <strong>idealist</strong> K-pop fan romanticizes K-pop and believes it has positive elements along with negative elements. Not all idealists deny K-pop’s oppressive nature—but they can enjoy the genre comfortably not thinking about the industry’s actions.";
     } else if (scoreY / 8 > 0 && scoreX / 8 < 0 ) {
-        resultDesc.innerHTML = "You are an <strong>Obsessed Realist</strong>";
+        resultDesc.innerHTML = "You are an <strong>Obsessed Realist</strong> <br> An <strong>obsessed</strong> K-pop fan is a fan who is actively engaging with K-pop activities as well as their favorite idols’ life activities. These people might even support their idols financially. <br> <br> A <strong>realist</strong> K-pop fan often has cynical and realistic views over the genre. They focus a lot more on what the industry does to the idols, and might even generally find it difficult to enjoy the genre because of this.";
     } else if(scoreY / 8 < 0 && scoreX / 8 < 0) {
-        resultDesc.innerHTML = "You are a <strong>Casual Realist</strong>";
+        resultDesc.innerHTML = "You are a <strong>Casual Realist</strong> <br> A <strong>casual</strong> K-pop fan is someone who is not that devoted towards K-pop and supporting groups and idols passionately. Yes, they might know a lot about K-pop in some cases, but generally they don’t follow what their favorites do all day. <br> <br> A <strong>realist</strong> K-pop fan often has cynical and realistic views over the genre. They focus a lot more on what the industry does to the idols, and might even generally find it difficult to enjoy the genre because of this.";
     } else if (scoreY / 8 < 0 && scoreX / 8 > 0) {
-        resultDesc.innerHTML = "You are a <strong>Casual Idealist</strong>";
+        resultDesc.innerHTML = "You are a <strong>Casual Idealist</strong> <br> A <strong>casual</strong> K-pop fan is someone who is not that devoted towards K-pop and supporting groups and idols passionately. Yes, they might know a lot about K-pop in some cases, but generally they don’t follow what their favorites do all day. <br> <br> An <strong>idealist</strong> K-pop fan romanticizes K-pop and believes it has positive elements along with negative elements. Not all idealists deny K-pop’s oppressive nature—but they can enjoy the genre comfortably not thinking about the industry’s actions.";
     } else if(scoreY / 8 === 0 && scoreX / 8 === 0) {
-        resultDesc.innerHTML = "You are a <strong>Centrist</strong>";
+        resultDesc.innerHTML = "You are a <strong>Centrist</strong> <br> You hold balanced, neutral views on both axes. You see K-pop as neither an idealized cultural phenomenon nor a deeply flawed industry, and you engage with it in moderation — neither as a casual listener nor as an overly dedicated fan. You’re the midpoint of the entire compass.";
     } else if(scoreY / 8 === 0 && scoreX / 8 < 0) {
-        resultDesc.innerHTML = "You are a <strong>Centrist Realist</strong>";
+        resultDesc.innerHTML = "You are a <strong>Centrist Realist</strong> <br> As a <strong>centrist</strong> of the Casualism-Obsessivism axis, you are neither an obsessed nor a casual fan, but rather a <strong>moderate</strong> fan. <br> <br> A <strong>realist</strong> K-pop fan often has cynical and realistic views over the genre. They focus a lot more on what the industry does to the idols, and might even generally find it difficult to enjoy the genre because of this.";
     } else if(scoreY / 8 === 0 && scoreX / 8 > 0) {
-        resultDesc.innerHTML = "You are a <strong>Centrist Idealist</strong>";
+        resultDesc.innerHTML = "You are a <strong>Centrist Idealist</strong> <br> As a <strong>centrist</strong> of the Casualism-Obsessivism axis, you are neither an obsessed nor a casual fan, but rather a <strong>moderate</strong> fan. <br> <br> An <strong>idealist</strong> K-pop fan romanticizes K-pop and believes it has positive elements along with negative elements. Not all idealists deny K-pop’s oppressive nature—but they can enjoy the genre comfortably not thinking about the industry’s actions.";
     } else if(scoreY / 8 > 0 && scoreX / 8 === 0) {
-        resultDesc.innerHTML = "You are an <strong>Obsessed Centrist</strong>";
+        resultDesc.innerHTML = "You are an <strong>Obsessed Centrist</strong> <br> An <strong>obsessed</strong> K-pop fan is a fan who is actively engaging with K-pop activities as well as their favorite idols’ life activities. These people might even support their idols financially.";
     } else if(scoreY / 8 < 0 && scoreX / 8 === 0) {
-        resultDesc.innerHTML = "You are a <strong>Casual Centrist</strong>";
+        resultDesc.innerHTML = "You are a <strong>Casual Centrist</strong> <br> A <strong>casual</strong> K-pop fan is someone who is not that devoted towards K-pop and supporting groups and idols passionately. Yes, they might know a lot about K-pop in some cases, but generally they don’t follow what their favorites do all day. <br> <br> As a <strong>centrist</strong> of the Realism-Idealism axis, you recognize both negative and positive sides of K-pop equally.";
     }
     resultTitle.textContent = `Your Position (${scoreX/totalXQuestions}, ${scoreY/totalYQuestions})`;
     resultTitle.style.textAlign = "center";
@@ -367,6 +365,32 @@ function showResults() {
     const container = document.querySelector(".container");
     container.insertBefore(resultTitle, canvas);
     container.insertBefore(resultDesc, canvas);
+
+    const retakeBtn = document.createElement("button");
+    retakeBtn.textContent = "Retake Quiz";
+    retakeBtn.classList.add("btn", "retake-btn");
+    retakeBtn.style.display = "block";
+    retakeBtn.style.margin = "20px auto";
+    retakeBtn.style.padding = "10px 20px";
+    retakeBtn.style.borderRadius = "10px";
+    retakeBtn.style.border = "none";
+    retakeBtn.style.backgroundColor = "#ff4d88";
+    retakeBtn.style.color = "white";
+    retakeBtn.style.cursor = "pointer";
+    retakeBtn.style.fontFamily = "Poppins";
+    retakeBtn.style.fontSize = "16px";
+
+    retakeBtn.addEventListener("click", () => {
+        document.querySelector(".quiz").style.display = "block";
+        canvas.style.display = "none";
+        resultTitle.remove();
+        resultDesc.remove();
+        retakeBtn.remove();
+        startQuiz();
+    });
+
+    document.querySelector(".container").appendChild(retakeBtn);
+
 }
 
 startQuiz();

@@ -10,7 +10,8 @@ html {
 }
 
 body {
-    background-color: #f9c5d5;
+    /* background-color: #f9c5d5; */
+    background: linear-gradient(135deg, #fbe4ec, #e3ecfb);
 }
 
 h2 {
@@ -33,7 +34,6 @@ h2 {
     flex-direction: column; 
     justify-content: center;
     gap: 3.6rem;
-
 }
 
 .quiz {
@@ -128,7 +128,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: #f9c5d5;
+  background: linear-gradient(135deg, #fbe4ec, #e3ecfb);
   color: #000;
   padding: 1rem 0;
   font-size: 1.4rem;
@@ -141,4 +141,19 @@ footer {
     margin: 5rem auto;
     display: none;
     border: 2px solid #000;
+}
+
+.logo {
+    width: 15rem; 
+}
+
+.title-container {
+    display: flex; 
+    align-items: center;  
+    justify-content: center;
+    gap: 2rem;
+}
+
+#question {
+  margin-bottom: 1.2rem;
 }
